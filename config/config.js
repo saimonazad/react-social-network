@@ -4,9 +4,7 @@ const config = {
     jwtSecret: process.env.JWT_SECRET || "12345",
     mongoUri: process.env.MONGODB_URI ||
         process.env.MONGO_HOST ||
-        'mongodb://' + (process.env.IP || 'localhost') + ':' +
-        (process.env.MONGO_PORT || '27017') +
-        '/SocialNetwork'
+        'mongodb+srv://azad:6251413@cluster0.9sdyj.mongodb.net/personalMongodb?retryWrites=true&w=majority'
 }
 
 export default config
