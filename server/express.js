@@ -22,7 +22,7 @@ app.use('/', userRoutes);
 app.use('/', authRoutes)
 
 app.get('/', (req, res) => {
-    res.send({ message: "Hello World" })
+    res.send({ message: "Welcome to my API" })
 })
 
 app.use((err, req, res, next) => {
