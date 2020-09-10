@@ -5,19 +5,23 @@
 	"license": "MIT",
 	"scripts": {
 		"development": "nodemon",
-		"build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+		"build": "webpack --mode=production --config webpack.config.server.js",
 		"start": "set NODE_ENV=production && node ./dist/server.generated.js"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.11.5",
 		"@babel/preset-env": "^7.11.5",
+		"@babel/preset-react": "^7.10.4",
+		"add": "^2.0.6",
 		"babel-loader": "^8.1.0",
 		"nodemon": "^2.0.4",
 		"webpack": "^4.44.1",
 		"webpack-cli": "^3.3.12",
-		"webpack-node-externals": "^2.5.2"
+		"webpack-node-externals": "^2.5.2",
+		"yarn": "^1.22.5"
 	},
 	"dependencies": {
+		"@hot-loader/react-dom": "^16.13.0",
 		"body-parser": "^1.19.0",
 		"compression": "^1.7.4",
 		"cookie-parser": "^1.4.5",
@@ -27,6 +31,11 @@
 		"helmet": "^4.1.0",
 		"jsonwebtoken": "^8.5.1",
 		"lodash": "^4.17.20",
-		"mongoose": "^5.10.2"
+		"mongoose": "^5.10.2",
+		"react-hot-loader": "^4.12.21"
+	},
+	"prettier": {
+		"singleQuote": true,
+		"semi": false
 	}
 }
