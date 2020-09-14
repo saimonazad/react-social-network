@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <Card className={classes.card}>
             <Typography variant="h6" className={classes.title}>
-                Home Page
+                Test Home Page
           </Typography>
             <CardMedia className={classes.media}
                 image={unicornbikeImg} title="Unicorn Bicycle" />
